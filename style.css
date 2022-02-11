@@ -1,0 +1,121 @@
+@import url('https://fonts.google.com/specimen/Rubik');
+
+:root{
+    --white: #fff;
+    --blue: hsl(246, 80%, 60%);
+    --Light-red-s: hsl(15, 100%, 70%);
+    --Soft-blue: hsl(195, 74%, 62%);
+    --Light-red-w: hsl(348, 100%, 68%);
+    --Lime-green: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --Soft-orange: hsl(43, 84%, 65%);
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+    --pale-Blue: hsl(236, 100%, 87%);
+
+}
+
+body{
+    background: var(--very-dark-blue);
+    font-family: Rubik;
+}
+
+.user{
+    width: 250px;
+}
+.ub{
+    border-radius: 10px;
+    background: var(--blue);
+    transform: translateY(10px);
+}
+.ub img{
+    height: 90px;
+    border: 4px solid white;
+}
+.ud{
+    background: var(--dark-blue);
+    color: var(--desaturated-blue);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.hover-white:hover{
+    color: white;
+    cursor: pointer;
+}
+.card{
+    width: 220px;
+    overflow: hidden;
+    border-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0px !important;
+}
+.card-body{
+     background: var(--dark-blue);
+     color: var(--white);
+     border-radius: 20px;
+}
+.card-body:hover{
+    background: var(--desaturated-blue);
+}
+
+.threeDots:hover{
+    cursor: pointer;
+}
+
+.rounded{
+    border-radius: 20px !important;
+}
+
+.orange{
+    background: var(--Soft-orange);
+}
+.skyblue{
+    background: var(--Soft-blue);
+}
+.pink{
+    background: var(--Light-red);
+}
+.green{
+    background: var(--Lime-green);
+}
+.violet{
+    background: var(--Violet);
+}
+.light-red-s{
+    background: var(--Light-red-w);
+}
+.light-red-w{
+    background: var(--Light-red-s);
+}
+
+.attribution { 
+    font-size: 20px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: var(--blue); 
+}
+.attribution a:hover { 
+    color: var(--white); 
+}
+
+@media (max-width:  575.98px){
+    .ub img{
+        height: 60px;
+    }
+    .creds{
+        display: flex;
+    }
+}
+@media (min-width:  576px) and (max-width:  991.98px){
+    .details{
+        padding:2px 30px;
+    }
+    .card{
+        margin: 10px !important;
+        height: 200px;
+    }
+}
+
